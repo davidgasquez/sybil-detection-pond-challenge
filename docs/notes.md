@@ -2,7 +2,7 @@
 
 ## TODO
 
-- Add provisional sybil list to the preprocessing and postprocessing.
+- Add provisional sybil list to the postprocessing.
 - Transaction/Events Entropy
 - Explore Undersampling (Tomek Links, NearMiss, SMOTE)
 - Assign a higher misclassification penalty to the minority class (Sybil)

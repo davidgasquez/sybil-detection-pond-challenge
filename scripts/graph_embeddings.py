@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Script to compute Node2Vec graph embeddings for blockchain addresses.
 """
@@ -236,7 +235,7 @@ def main():
 
     # Define embedding dimensions and workers
     embedding_dimensions = 64  # Common choice, can be tuned
-    num_workers = 4  # Adjust based on available CPU cores
+    num_workers = 2  # Adjust based on available CPU cores
 
     # Compute embeddings
     embeddings_df = compute_node2vec_embeddings(
