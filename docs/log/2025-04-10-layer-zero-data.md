@@ -51,3 +51,5 @@ This should [cover these](https://common.xyz/layerzero/search?q=sybil&communityS
 - https://common.xyz/layerzero/discussion/22086-cross-chain-sybil-addresses
 
 That said, not all are covered.
+
+In round two, I got the [lz_provisional_sybil_list from a random tweet](https://x.com/airdropping_me/status/1802902567338553605).
