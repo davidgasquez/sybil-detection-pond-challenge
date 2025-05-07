@@ -1,0 +1,31 @@
+[project]
+name = "sdpc"
+version = "0.0.0"
+description = "Predict the probability of a given wallet address being a sybil"
+readme = "README.md"
+authors = [{ name = "David Gasquez", email = "davidgasquez@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "altair>=5.5.0",
+    "duckdb>=1.2.2",
+    "httpx>=0.28.1",
+    "pandas>=2.2.3",
+    "polars>=1.27.1",
+    "pyarrow>=19.0.1",
+    "scikit-learn>=1.6.1",
+    "skrub>=0.5.3",
+    "flaml[automl,catboost]>=2.3.4",
+    "networkx>=3.4.2",
+    "node2vec>=0.5.0",
+    "flipside>=2.0.8",
+]
+
+[tool.uv.sources]
+flaml = { git = "https://github.com/microsoft/FLAML" }
+
+[build-system]
+requires = ["uv_build>=0.6.14,<0.7"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["ipykernel>=6.29.5"]
