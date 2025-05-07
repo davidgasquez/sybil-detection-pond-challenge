@@ -1,18 +1,18 @@
-# Pond Sybil Detection Challenge
+# Pond Sybil Detection Challenge 🕵️‍♂️
 
 Sybil attacks have long been a challenge in Web3, affecting everything from airdrops and governance to funding mechanisms. These attacks occur when individuals create multiple fake identities to manipulate systems, gain unfair advantages, or exploit incentives.
 
 The objective is to build a machine learning model that predicts the **probability** of a given wallet address being a sybil, using historical blockchain data.
 
-## Resources
+## Resources 📚
 
 - [Pond Competition](https://cryptopond.xyz/modelfactory/detail/4712551)
 
-## Data
+## Data 📊
 
 For a given address, the desired output of the model is a score between 0 and 1 (0=non-Sybil, 1=Sybil) indicating how likely the given address is a Sybil wallet.
 
-You are provided with a labeled dataset of **known Sybil addresses** sourced from **Gitcoin Passport and external Sybil lists **(LayerZero, zkSync, OP, Octant, and Gitcoin’s internal ban lists). You will analyze wallet activities, including **transactions, token transfers, and DEX swaps**. Please feel free to use any other dataset that you find useful.
+You are provided with a labeled dataset of **known Sybil addresses** sourced from **Gitcoin Passport and external Sybil lists **(LayerZero, zkSync, OP, Octant, and Gitcoin's internal ban lists). You will analyze wallet activities, including **transactions, token transfers, and DEX swaps**. Please feel free to use any other dataset that you find useful.
 
 #### Known Sybil Addresses
 
@@ -46,19 +46,19 @@ Not all wallets have traded on decentralized exchanges (DEX). For wallets that h
 - The address that initiated the swap (`ORIGIN_FROM_ADDRESS`)
 - The address that receives the swapped token (`TX_TO`)
 
-## Evaluation
+## Evaluation 📈
 
 For each address in the test set, the model should output a **probability score** (ranging from 0 to 1) representing the likelihood of the address being Sybil. The prediction files will be evaluated once per week, and accordingly the leaderboard will be updated weekly.
 
 The submissions will be evaluated using **AUC** (Area Under the ROC Curve).
 
-## Submission File
+## Submission File 📄
 
 Once your model is ready, submit your predictions for the test addresses in a simple CSV file with two columns (The column names have to match below exactly or the evaluation will error out):
 
 - `ADDRESS`: Wallet addresses from the test set.
 - `PRED`: Your predicted Sybil likelihood (between 0 and 1).
 
-## License
+## License 📜
 
 This repository is licensed under the [MIT License](https://opensource.org/licenses/MIT).
