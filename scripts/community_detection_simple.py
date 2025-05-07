@@ -8,7 +8,7 @@ from pathlib import Path
 
 import networkx as nx
 import polars as pl
-from community import best_partition  # type: ignore
+from community import best_partition
 
 # Suppress warnings
 warnings.filterwarnings("ignore")
@@ -187,7 +187,7 @@ def main():
     # Save community mapping to CSV
     output_dir = PROJECT_ROOT / "data/processed"
     output_dir.mkdir(parents=True, exist_ok=True)
-    community_path = output_dir / "address_community_simple_filtered3.csv"
+    community_path = output_dir / "addresses_community_simple.csv"
     community_df.write_csv(community_path)
     print(f"Address to community mapping saved to {community_path}")
 
