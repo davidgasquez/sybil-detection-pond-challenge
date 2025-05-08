@@ -2,6 +2,8 @@
 
 ## TODO
 
+- Count transactions to the addresses in different sybil lists
+- Add known sybils to training set from test set
 - Add provisional sybil list to the postprocessing.
   - Same with /home/david/projects/sybil-detection-pond-challenge/data/external/hop_all_data_filtered.csv
   - zksync_sybil_list_* and ct_app_s3_1_all_sybils
