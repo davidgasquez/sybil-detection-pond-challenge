@@ -3,17 +3,25 @@
 ## TODO
 
 - Add provisional sybil list to the postprocessing.
+  - Same with /home/david/projects/sybil-detection-pond-challenge/data/external/hop_all_data_filtered.csv
+  - zksync_sybil_list_* and ct_app_s3_1_all_sybils
 - Transaction/Events Entropy
 - Explore Undersampling (Tomek Links, NearMiss, SMOTE)
 - Assign a higher misclassification penalty to the minority class (Sybil)
   - Many classifiers (like XGBoost, LightGBM, Logistic Regression, SVMs) support `class_weight='balanced'`
 - Ensemble best submissions
 
+## External Lists
+
+- https://docs.google.com/spreadsheets/d/1kUAt-vrkID0yBkic72djWRxdliK8W_5rBGxq6-Iv3cg/edit?gid=822397105#gid=822397105
+- https://github.com/forta-network/docs/blob/5b9c2d37ee3339f21c1d1df7c0f9781551916ead/docs/airdrop.md?plain=1#L45
+
 ## APIs
 
 - [Etherscan API](https://etherscan.io/address/0x128e14fcac5e8fa11202ed4582d332bb37e05e67)
 - [Intel.arkm.com](https://intel.arkm.com/explorer/address/0xb9ecee9a0e273d8A1857F3B8EeA30e5dD3cb6335)
 - [BitQuery API](https://explorer.bitquery.io/ethereum/address/0xfbcf4ab9f374e146009c2f7db2f659f2068b085f) ([GraphQL](https://bitquery.io/labs/graphql))
+- https://docs.holonym.id/for-developers/custom-sybil-resistance
 
 ## Features
 
@@ -36,6 +44,7 @@
 - https://roundoperations.gitcoin.co/round-operations/post-round/sybil-analysis
 - https://github.com/cryptoamy/layerzero_sybil_scan_report
 - https://github.com/0x9simon/slaysybil
+- https://ct.app/airdrop/layerzero-sybil
 - https://trusta-labs.gitbook.io/trustalabs/trustscan/q-and-a-for-sybil-score
 - https://trustalabs.ai/trustscan
 - https://github.com/TrustaLabs/Airdrop-Sybil-Identification
