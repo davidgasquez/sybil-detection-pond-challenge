@@ -8,6 +8,7 @@
   - Same with /home/david/projects/sybil-detection-pond-challenge/data/external/hop_all_data_filtered.csv
   - zksync_sybil_list_* and ct_app_s3_1_all_sybils
 - Transaction/Events Entropy
+- Cluster and then model at that cluster level
 - Explore Undersampling (Tomek Links, NearMiss, SMOTE)
 - Assign a higher misclassification penalty to the minority class (Sybil)
   - Many classifiers (like XGBoost, LightGBM, Logistic Regression, SVMs) support `class_weight='balanced'`
